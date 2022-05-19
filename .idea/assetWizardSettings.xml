@@ -356,8 +356,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_menu" />
-                            <entry key="sourceFile" value="C:\Users\nguye\Desktop\icons8_Menu.svg" />
+                            <entry key="outputName" value="ic_icons8_job_seeker" />
+                            <entry key="sourceFile" value="C:\Users\nguye\Downloads\icons8_job_seeker.svg" />
                           </map>
                         </option>
                       </PersistentState>
