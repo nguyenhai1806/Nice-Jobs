@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FindJobs" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.FindJobs" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green_second</item>
-        <item name="colorPrimaryDark">@color/tan</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/green_second</item>
         <!-- Customize your theme here. -->
     </style>
