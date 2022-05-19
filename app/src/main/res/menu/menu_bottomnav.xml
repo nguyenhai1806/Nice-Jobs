@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Jobs"
+        android:icon="@drawable/ic__work_outline_24"/>
+    <item android:title="Companies"
+        android:icon="@drawable/ic_company_24"/>/>
+    <item android:title="Account"
+        android:icon="@drawable/ic_account_circle_24"/>/>
+</menu>
