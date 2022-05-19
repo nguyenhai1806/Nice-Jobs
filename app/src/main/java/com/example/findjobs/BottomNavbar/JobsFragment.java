@@ -1,4 +1,4 @@
-package com.example.findjobs;
+package com.example.findjobs.BottomNavbar;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,12 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.findjobs.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CompaniesFragment#newInstance} factory method to
+ * Use the {@link JobsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CompaniesFragment extends Fragment {
+public class JobsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,7 +24,7 @@ public class CompaniesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CompaniesFragment() {
+    public JobsFragment() {
         // Required empty public constructor
     }
 
@@ -32,11 +34,11 @@ public class CompaniesFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CompaniesFragment.
+     * @return A new instance of fragment JobsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CompaniesFragment newInstance(String param1, String param2) {
-        CompaniesFragment fragment = new CompaniesFragment();
+    public static JobsFragment newInstance(String param1, String param2) {
+        JobsFragment fragment = new JobsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -57,6 +59,6 @@ public class CompaniesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_companies, container, false);
+        return inflater.inflate(R.layout.fragment_jobs, container, false);
     }
 }

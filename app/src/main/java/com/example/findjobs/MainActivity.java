@@ -1,12 +1,15 @@
 package com.example.findjobs;
 
-import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.findjobs.BottomNavbar.AccountFragment;
+import com.example.findjobs.BottomNavbar.CompaniesFragment;
+import com.example.findjobs.BottomNavbar.JobsFragment;
+import com.example.findjobs.BottomNavbar.MenuFragment;
 import com.example.findjobs.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,20 +22,19 @@ public class MainActivity extends AppCompatActivity {
         replaceFragment(new JobsFragment());
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener(menuItem -> {
-            switch (menuItem.getItemId()){
-                case R.id.accountFragment:
-                    replaceFragment(new AccountFragment());
-                    break;
-                case R.id.jobsFragment:
-                    replaceFragment(new JobsFragment());
-                    break;
-                case R.id.companiesFragment:
-                    replaceFragment(new CompaniesFragment());
-                    break;
+            CharSequence title = menuItem.getTitle();
+            if ("Account".equals(title)) {
+                replaceFragment(new AccountFragment());
+            } else if ("Jobs".equals(title)) {
+                replaceFragment(new JobsFragment());
+            } else if ("Companies".equals(title)) {
+                replaceFragment(new CompaniesFragment());
+            }
+            else if ("Menu".equals(title)) {
+                replaceFragment(new MenuFragment());
             }
             return true;
         });
-
     }
     private void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();

@@ -7,17 +7,22 @@
 
     <fragment
         android:id="@+id/jobsFragment"
-        android:name="com.example.findjobs.JobsFragment"
+        android:name="com.example.findjobs.BottomNavbar.JobsFragment"
         android:label="fragment_jobs"
         tools:layout="@layout/fragment_jobs" />
     <fragment
         android:id="@+id/companiesFragment"
-        android:name="com.example.findjobs.CompaniesFragment"
+        android:name="com.example.findjobs.BottomNavbar.CompaniesFragment"
         android:label="fragment_companies"
         tools:layout="@layout/fragment_companies" />
     <fragment
         android:id="@+id/accountFragment"
-        android:name="com.example.findjobs.AccountFragment"
+        android:name="com.example.findjobs.BottomNavbar.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.findjobs.BottomNavbar.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
 </navigation>
